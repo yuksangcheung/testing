@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+/*color scheme:
+ #F2DFEF 
+ #52D9CB
+ #B6F2EC
+ #01261C
+ #41D9AE
+
+ */
+
+ h1, h2, h3, h4, h5, p, li{
+    color: #01261C;
+ }
+ body{
+    margin: 5vh 5vw;
+    background-color:  #B6F2EC;
+ }
+ .header-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+ }
+ .header-bar a{
+    color: #01261C;
+ }
+ .header-bar a:hover{
+   border-bottom: #01261C 2px solid;
+ }
+.navbar-toggler-icon{
+    border-radius: 5px;
+ }
+ .dropdown-item a{
+    color: #01261C;
+ }
+ .icon{
+    width: 125px;
+    border-radius: 10px;
+    margin-right: 10px;
+ }
+ .homepage{
+    display: flex;
+    height: 75vh;
+    
+}
+.home1{
+    width: 50%;
+    text-align: center;
+    padding: 10% 0;
+    align-items: center;
+    background-color: #F2DFEF;
+}
+.home1 h1{
+    font-size: 4rem;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.home2{
+    background-image: url("../src/assets/icon.png");
+    background-repeat: no-repeat;
+    background-size:120%;
+    background-position: 50%;
+    width: 50%;
+}
+.loginform, .signupform{
+    width: 30%;
+    min-width: 300px;
+    margin: 5%;
+}
+.footer-links{
+   border-top: 3px solid #01261C;
+   display: flex;
+   
+}
+.footer-links li{
+   margin-left: 20px;
+   list-style: none;
+   padding-top: 20px;
+}
+.testingblock{
+   min-height: 50vh;
+}

@@ -1,0 +1,30 @@
+<h1>Survey List</h1>
+
+  <form #surveyForm="ngForm" (ngSubmit)="add(surveyForm.value)">
+    <label>Survey Name : </label>
+    <input type="text" name="sName" ngModel><br><br>
+
+    <label>Author :</label>
+    <input type="text" name="author" ngModel><br><br>
+
+    <input type="submit" value="{{editMode?'Update Survey':'Add Survey'}}">
+  </form>
+
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+    </tr>
+
+    <tr *ngFor="let survey  of surveys">
+      <td>{{survey.name}}</td>
+      <td>{{survey.author}}</td>
+      <td><button type="button" (click)="onEditClicked(survey._id)">Update</button></td>
+      <td><button type="button" (click)="onDeleteClicked(survey._id)">Delete</button></td>
+
+
+
+    </tr>
+  </table>
